@@ -1,11 +1,78 @@
 button{
-    background-color: navy;
+    background-color: rgb(100,100,100);
     color:white;
     height: 30px;
     border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 20%;
 }
 
 button:hover{
     cursor: pointer;
     opacity: 0.8;
 }
+
+h1{
+    font-size: 75px;
+}
+
+.titleBar{
+    background-color: rgb(100,100,100);
+    border-width: 15px;
+    margin-top: 0px;
+    height: 100px;
+    width: 100%;
+}
+
+.linkBar{
+    background-color: rgb(200,200,250);
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+    position: fixed;
+    display: flex;
+    top: 0px;
+}
+
+.aboutMe{
+    background-color: rgb(150,150,150);
+    width: 75%;
+    margin-left: 12.5%;
+}
+
+.projects{
+    display: flex;
+}
+
+.SpaceShooter{
+    background-color: rgb(150,150,150);
+    display: flex;
+    flex-direction: row;
+}
+
+
+.LC3Calc{
+    background-color: rgb(150,150,150);
+    display: flex;
+    flex-direction: row;
+}
+
+
+body{
+    background-color: black;
+    background-image: url("../images/Background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 100%;
+}
+
+
+@media (max-width:650px){
+    .linkBar{
+       width:100%;
+       margin-left: 0%;
+     }
+     .projects, .LC3Calc, .SpaceShooter{
+        flex-direction: column;
+     }
+   }
